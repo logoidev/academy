@@ -26,7 +26,7 @@ const askRepeatedQuestion = async (question, getValues, isValid) => {
   }
 };
 
-const FIELD_SIZE = 3;
+const FIELD_SIZE = 4;
 
 const EMPTY_FIELD = new Array(FIELD_SIZE)
   .fill(0)
@@ -38,7 +38,8 @@ const EMPTY_FIELD = new Array(FIELD_SIZE)
 //   [2, 1, 1],
 // ];
 
-const indexToCharacter = (i) => (i === 0 ? "*" : i === 1 ? "X" : "O");
+// const indexToCharacter = (i) => (i === 0 ? "*" : i === 1 ? "X" : "O");
+const indexToCharacter = (i) => (i === 0 ? " • " : i === 1 ? " ❌" : " ⭕");
 
 const run = async () => {
   const field = EMPTY_FIELD;

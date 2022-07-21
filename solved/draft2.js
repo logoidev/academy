@@ -1,4 +1,4 @@
-const readline = require("readline").createInterface({
+/* const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -48,4 +48,5 @@ const askQuestions = async (question) => {
   }
   readline.close();
 };
-askQuestions();
+askQuestions(); */
+console.log([1,2,3,4,4,4,5,4,1,5,4].filter(item => item === 4).length);
