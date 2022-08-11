@@ -5,9 +5,14 @@
     "npm": "^8.5.5"
   },
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "serve": "serve"
   },
   "devDependencies": {
+    "canvas": "^2.9.3",
+    "jest-image-snapshot": "^5.1.0",
+    "jsdom": "^20.0.0",
+    "serve": "^14.0.1",
     "vitest": "0.18.1"
   }
 }
