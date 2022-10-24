@@ -2,7 +2,7 @@ name: Linter & tests execution workflow
 on:
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   test:
     name: Execute linter & test suites for all affected projects
