@@ -1,2 +1,2 @@
-in-progress:
-  - in-progress/**/*
+coding-tasks:
+  - packages/coding-tasks/**/*

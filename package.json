@@ -1,18 +1,32 @@
 {
-  "type": "module",
+  "packageManager": "yarn@3.2.4",
+  "name": "@logoi/academy",
+  "website": "https://logoi.dev",
+  "version": "1.0.0",
+  "description": "Digital Design Academy",
+  "main": "index.js",
+  "repository": "git@github.com:logoidev/academy.git",
+  "author": "Vlad Kolbaia",
+  "license": "GPL-3.0",
+  "private": true,
   "engines": {
-    "node": "^16.15.0",
-    "npm": "^8.5.5"
+    "node": "16.18.0",
+    "yarn": "3.2.4"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "vitest",
-    "serve": "serve"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "test:watch": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "canvas": "^2.9.3",
-    "jest-image-snapshot": "^5.1.0",
-    "jsdom": "^20.0.0",
-    "serve": "^14.0.1",
-    "vitest": "0.18.1"
+    "eslint": "8.0.0",
+    "prettier": "2.7.1",
+    "turbo": "1.5.6"
   }
 }
