@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
+    "test:ci": "vitest run --update",
     "test:watch": "vitest",
     "serve": "serve"
   },
