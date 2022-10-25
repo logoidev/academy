@@ -1,11 +1,14 @@
 export function findMaxAverage(nums, k) {
-  let result = null;
-  const border = nums.length -1 - k;
-  const array = nums.sort(function (a, b) {
-    return Math.abs(a) - Math.abs(b);
-  });
-  for (let i = nums.length-1; i > border; i--) {
-    result += nums[i];
+  let sum = 0;
+  for (let i = 0; i < k; i++) {
+    sum += nums[i];
   }
-  return result / k;
+
+  let max = sum;
+  for (let i = k; i < nums.length; i++) {
+    sum = sum - nums[i - k] + nums[i];
+    max = Math.max(max, sum);
+  }
+
+  return max / k;
 }

@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { buildArray } from "./permutationArray.js";
 
+/* https://leetcode.com/problems/build-array-from-permutation/ */
+
 describe("Build Array from Permutation", () => {
   it("Array", () => {
     const nums = [0, 2, 1, 5, 3, 4];

@@ -4,7 +4,7 @@
 // reverse([1, 2, 3]) -> [3, 2, 1]
 // reverse(reverse([1, 2, 3])) -> [1, 2, 3]
 
-function reverseArray(array) {
+export function reverseArray(array) {
   var result = [];
   function reverse(array) {
     if (array.length !== 0) {

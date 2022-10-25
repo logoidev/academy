@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { findMaxAverage } from "./MaximumAverageSubarray.js";
 
+/*  https://leetcode.com/problems/maximum-average-subarray-i/submissions/ */
+
 describe("Maximum Average Subarray I", () => {
   it("maximum", () => {
     const nums = [1, 12, -5, -6, 50, 3],

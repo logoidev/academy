@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { checkTree } from "./root.js";
 
+/* https://leetcode.com/problems/root-equals-sum-of-children/ */
+
 describe("Root Equals Sum of Children", () => {
   it("Root", () => {
     const root = [10, 4, 6];
