@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { buildArray } from "./permutationArray.js";
+import { buildArray } from "./buildArray.js";
 
 /* https://leetcode.com/problems/build-array-from-permutation/ */
 

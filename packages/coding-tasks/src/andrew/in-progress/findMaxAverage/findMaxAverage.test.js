@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { findMaxAverage } from "./MaximumAverageSubarray.js";
+import { findMaxAverage } from "./findMaxAverage.js";
 
 /*  https://leetcode.com/problems/maximum-average-subarray-i/submissions/ */
 

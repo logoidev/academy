@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { reverseArray } from "./reverse.js";
+import { reverseArray } from "./reverseArray.js";
 
 describe("Reverse array", () => {
   it("array", () => {

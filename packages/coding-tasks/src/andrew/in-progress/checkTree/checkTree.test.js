@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { checkTree } from "./root.js";
+import { checkTree } from "./checkTree.js";
 
 /* https://leetcode.com/problems/root-equals-sum-of-children/ */
 

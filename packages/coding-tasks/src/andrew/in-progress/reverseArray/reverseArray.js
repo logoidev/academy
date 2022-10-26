@@ -15,5 +15,3 @@ export function reverseArray(array) {
   reverse(array);
   return result;
 }
-console.log(reverseArray(reverseArray([1, 2, 3])));
-console.log(reverseArray([1, 2, 3]));
