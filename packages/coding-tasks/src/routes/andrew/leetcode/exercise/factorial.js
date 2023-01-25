@@ -6,9 +6,9 @@
 // 3 -> 3 * 2 * 1 -> 6
 
 function factorial(number) {
-  if (number < 1) {
-    return 1;
-  }
-  return number * factorial(number - 1);
+	if (number < 1) {
+		return 1;
+	}
+	return number * factorial(number - 1);
 }
 console.log(factorial(5));

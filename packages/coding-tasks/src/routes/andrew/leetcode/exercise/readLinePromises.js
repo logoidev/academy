@@ -1,6 +1,6 @@
-const readline = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout,
+const readline = require('readline').createInterface({
+	input: process.stdin,
+	output: process.stdout
 });
 
 // readline.question(`What's your name? `, function (name) {
@@ -16,19 +16,16 @@ const readline = require("readline").createInterface({
 // });
 
 const askQuestion = (question) =>
-  new Promise((resolve, reject) =>
-    readline.question(`${question} `, (answer) => resolve(answer))
-  );
+	new Promise((resolve, reject) => readline.question(`${question} `, (answer) => resolve(answer)));
 
 // Lamda/Arrow function
 const askQuestions = async (question) => {
-  
-  const age = await askQuestion(`What's your age?`);
-  const currentYear = new Date().getFullYear();
-  const yearOfBirth = currentYear - age;
-  
-  console.log(`Hey ${firstName} ${lastName}! You were born on ${yearOfBirth}`);
-  readline.close();  
+	const age = await askQuestion(`What's your age?`);
+	const currentYear = new Date().getFullYear();
+	const yearOfBirth = currentYear - age;
+
+	console.log(`Hey ${firstName} ${lastName}! You were born on ${yearOfBirth}`);
+	readline.close();
 };
 
 askQuestions();

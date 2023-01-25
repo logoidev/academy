@@ -1,21 +1,21 @@
 const draw = () => {
-  console.log("*");
+	console.log('*');
 
-  setTimeout(() => {
-    console.log("**");
+	setTimeout(() => {
+		console.log('**');
 
-    setTimeout(() => {
-      console.log("***");
+		setTimeout(() => {
+			console.log('***');
 
-      setTimeout(() => {
-        console.log("****");
+			setTimeout(() => {
+				console.log('****');
 
-        setTimeout(() => {
-          console.log("*****");
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
+				setTimeout(() => {
+					console.log('*****');
+				}, 1000);
+			}, 1000);
+		}, 1000);
+	}, 1000);
 };
 
 draw();

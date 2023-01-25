@@ -5,13 +5,13 @@
 // reverse(reverse([1, 2, 3])) -> [1, 2, 3]
 
 export function reverseArray(array) {
-  var result = [];
-  function reverse(array) {
-    if (array.length !== 0) {
-      result.push(array.pop());
-      reverse(array);
-    }
-  }
-  reverse(array);
-  return result;
+	var result = [];
+	function reverse(array) {
+		if (array.length !== 0) {
+			result.push(array.pop());
+			reverse(array);
+		}
+	}
+	reverse(array);
+	return result;
 }

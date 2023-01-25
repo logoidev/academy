@@ -1,21 +1,21 @@
 function toBinary2(number) {
-  let num = number;
-  let binary = String(num % 2);
+	let num = number;
+	let binary = String(num % 2);
 
-  while (num > 1) {
-    num = Math.floor(num / 2);
-    binary = (num % 2) + binary;
-  }
+	while (num > 1) {
+		num = Math.floor(num / 2);
+		binary = (num % 2) + binary;
+	}
 
-  return binary;
+	return binary;
 }
 
 function toBinary(number) {
-  const rest = String(number % 2);
-  if (number <= 1) {
-    return rest;
-  }
-  return toBinary(Math.floor(number / 2)) + rest;
+	const rest = String(number % 2);
+	if (number <= 1) {
+		return rest;
+	}
+	return toBinary(Math.floor(number / 2)) + rest;
 }
 
 // 10 -> 1010
@@ -30,20 +30,20 @@ function toBinary(number) {
 // console.log(toBinary(256))
 
 function toDecimal(binary) {
-  let array= [];
-  for(let i = binary.length-1; i >= 0; i--) {
-    array.push(binary[i]);
-}
-  console.log(result)
+	let array = [];
+	for (let i = binary.length - 1; i >= 0; i--) {
+		array.push(binary[i]);
+	}
+	console.log(result);
 }
 toDecimal('1010');
 //console.log(toDecimal(toBinary(12)))
 //console.log(toDecimal(toBinary(23)))
 
 function printChars(string) {
-  for (let i = 0; i < string.length; i++) {
-    console.log(string[i]);
-  }
+	for (let i = 0; i < string.length; i++) {
+		console.log(string[i]);
+	}
 }
 
 //printChars('101010101')

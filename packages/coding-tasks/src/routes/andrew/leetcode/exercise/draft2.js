@@ -49,4 +49,4 @@ const askQuestions = async (question) => {
   readline.close();
 };
 askQuestions(); */
-console.log([1,2,3,4,4,4,5,4,1,5,4].filter(item => item === 4).length);
+console.log([1, 2, 3, 4, 4, 4, 5, 4, 1, 5, 4].filter((item) => item === 4).length);

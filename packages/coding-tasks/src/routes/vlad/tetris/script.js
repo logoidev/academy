@@ -1,6 +1,5 @@
-import { Shapes } from './Shapes.js';
 import { Field } from './Field.js';
-import { pause, getRandomInt, rotateMatrix } from './utils.js';
+import { pause } from './utils.js';
 import { initCanvas } from './canvas.js';
 
 export const runTetris = async () => {
@@ -40,5 +39,3 @@ export const runTetris = async () => {
 		await pause(300);
 	}
 };
-
-// window.addEventListener("load", runTetris);
