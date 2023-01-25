@@ -10,7 +10,7 @@ const config = {
 	kit: {
 		adapter: vercel({
 			edge: false,
-			external: Object.keys(packageJson.dependencies),
+			external: [], // Object.keys(packageJson.dependencies),
 			split: false
 		})
 	}
