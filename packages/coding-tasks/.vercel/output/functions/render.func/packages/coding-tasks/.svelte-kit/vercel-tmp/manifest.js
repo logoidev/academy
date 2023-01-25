@@ -4,16 +4,13 @@ export const manifest = {
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-ee984ea7.js","imports":["_app/immutable/start-ee984ea7.js","_app/immutable/chunks/index-1664d19c.js","_app/immutable/chunks/singletons-90043bb3.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-05967d16.js","imports":["_app/immutable/start-05967d16.js","_app/immutable/chunks/index-857a2fad.js","_app/immutable/chunks/singletons-1246537c.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../output/server/nodes/0.js'),
 			() => import('../output/server/nodes/1.js'),
 			() => import('../output/server/nodes/2.js'),
 			() => import('../output/server/nodes/3.js'),
-			() => import('../output/server/nodes/4.js'),
-			() => import('../output/server/nodes/5.js'),
-			() => import('../output/server/nodes/6.js'),
-			() => import('../output/server/nodes/7.js')
+			() => import('../output/server/nodes/4.js')
 		],
 		routes: [
 			{
@@ -24,38 +21,17 @@ export const manifest = {
 				endpoint: null
 			},
 			{
-				id: "/andrew",
-				pattern: /^\/andrew\/?$/,
-				params: [],
+				id: "/[student]",
+				pattern: /^\/([^/]+?)\/?$/,
+				params: [{"name":"student","optional":false,"rest":false,"chained":false}],
 				page: { layouts: [0], errors: [1], leaf: 3 },
 				endpoint: null
 			},
 			{
-				id: "/andrew/snake",
-				pattern: /^\/andrew\/snake\/?$/,
-				params: [],
+				id: "/[student]/[task]",
+				pattern: /^\/([^/]+?)\/([^/]+?)\/?$/,
+				params: [{"name":"student","optional":false,"rest":false,"chained":false},{"name":"task","optional":false,"rest":false,"chained":false}],
 				page: { layouts: [0], errors: [1], leaf: 4 },
-				endpoint: null
-			},
-			{
-				id: "/vlad",
-				pattern: /^\/vlad\/?$/,
-				params: [],
-				page: { layouts: [0], errors: [1], leaf: 5 },
-				endpoint: null
-			},
-			{
-				id: "/vlad/snake",
-				pattern: /^\/vlad\/snake\/?$/,
-				params: [],
-				page: { layouts: [0], errors: [1], leaf: 6 },
-				endpoint: null
-			},
-			{
-				id: "/vlad/tetris",
-				pattern: /^\/vlad\/tetris\/?$/,
-				params: [],
-				page: { layouts: [0], errors: [1], leaf: 7 },
 				endpoint: null
 			}
 		],
