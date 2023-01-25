@@ -24,10 +24,12 @@
     "lint": "turbo run lint",
     "format": "prettier --write ."
   },
+  "dependencies": {
+    "turbo": "1.5.6"
+  },
   "devDependencies": {
     "eslint": "8.0.0",
     "prettier": "2.7.1",
-    "prettier-plugin-svelte": "2.9.0",
-    "turbo": "1.5.6"
+    "prettier-plugin-svelte": "2.9.0"
   }
 }
