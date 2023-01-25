@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { STUDENTS, type Student } from '../../data/students';
+
+	import CodeOnGithub from '../../components/CodeOnGithub.svelte';
+	import { STUDENTS } from '../../students/students';
+	import type { Student } from '../../types/student';
 
 	let student: Student | undefined;
 
@@ -22,3 +25,5 @@
 		<p><a href={[student.name, task].map((p) => p.toLowerCase()).join('/')}>{task}</a></p>
 	{/each}
 {/if}
+
+<CodeOnGithub />

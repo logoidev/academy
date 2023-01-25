@@ -1,19 +1,32 @@
 <script lang="ts">
-	const GITHUB_REPO_URL = 'https://github.com/logoidev/academy';
-	const GITHUB_URL = '';
+	import { onMount } from 'svelte';
+
+	const GITHUB_REPO_URL_BASE = 'https://github.com/logoidev/academy';
+	const GITHUB_REPO_URL = `${GITHUB_REPO_URL_BASE}/tree/main/packages/coding-tasks/src/students/`;
 	const GITHUB_LOGO_URL =
 		'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg';
+
+	let url = GITHUB_REPO_URL;
+
+	onMount(() => {
+		const paths = window.location.pathname.split('/').filter(Boolean);
+		url += paths.join('/');
+	});
 </script>
 
 <div>
 	<img src={GITHUB_LOGO_URL} />
-	<a href="">View code on GitHub</a>
+	<a href={url}>View code on GitHub</a>
 </div>
 
 <style>
 	div {
+		position: absolute;
 		display: flex;
 		align-items: center;
+		bottom: 0;
+		right: 0;
+		margin: 8px;
 	}
 	img {
 		width: 24px;

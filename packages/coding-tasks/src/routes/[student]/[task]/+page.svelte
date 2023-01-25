@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import { STUDENTS, type Student } from '../../../data/students';
-	import type { Task } from '../../../data/tasks';
+	import { STUDENTS } from '../../../students/students';
+	import CodeOnGithub from '../../../components/CodeOnGithub.svelte';
+	import type { Task } from '../../../types/task';
+	import type { Student } from '../../../types/student';
 
 	let student: Student | undefined;
 	let task: Task | undefined;
@@ -29,3 +31,5 @@
 		<svelte:component this={module.default} />
 	{/await}
 {/if}
+
+<CodeOnGithub />

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import CodeOnGithub from '../components/CodeOnGithub.svelte';
-	import { STUDENTS } from '../data/students';
+	import { STUDENTS } from '../students/students';
 </script>
 
 <h1>Welcome to Logoi Academy</h1>
