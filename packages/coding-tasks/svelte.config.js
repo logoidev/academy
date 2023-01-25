@@ -1,6 +1,5 @@
 import vercel from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import packageJson from './package.json' assert { type: 'json' };
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,7 +9,7 @@ const config = {
 	kit: {
 		adapter: vercel({
 			edge: false,
-			external: [], // Object.keys(packageJson.dependencies),
+			external: [],
 			split: false
 		})
 	}

@@ -15,7 +15,7 @@
 </script>
 
 <div>
-	<img src={GITHUB_LOGO_URL} />
+	<img alt="GitHub logo" src={GITHUB_LOGO_URL} />
 	<a href={url}>View code on GitHub</a>
 </div>
 
