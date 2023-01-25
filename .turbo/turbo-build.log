@@ -1,0 +1,77 @@
+(node:88488) ExperimentalWarning: Importing JSON modules is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+vite v4.0.4 building for production...
+transforming...
+1:25:47 PM [vite-plugin-svelte] /src/components/CodeOnGithub.svelte:13:1 A11y: <img> element should have an alt attribute
+11: 
+12: <div>
+13:   <img src={GITHUB_LOGO_URL} />
+      ^
+14:   <a href={url}>View code on GitHub</a>
+15: </div>
+✓ 63 modules transformed.
+1:25:47 PM [vite-plugin-svelte] dom compile done.
+package                    	files	  time	   avg
+@logoi/academy-coding-tasks	    8	88.0ms	11.0ms
+@sveltejs/kit              	    2	27.9ms	13.9ms
+rendering chunks...
+
+vite v4.0.4 building SSR bundle for production...
+transforming...
+1:25:47 PM [vite-plugin-svelte] /src/components/CodeOnGithub.svelte:13:1 A11y: <img> element should have an alt attribute
+11: 
+12: <div>
+13:   <img src={GITHUB_LOGO_URL} />
+      ^
+14:   <a href={url}>View code on GitHub</a>
+15: </div>
+✓ 67 modules transformed.
+1:25:47 PM [vite-plugin-svelte] ssr compile done.
+package                    	files	  time	  avg
+@logoi/academy-coding-tasks	    8	15.7ms	2.0ms
+@sveltejs/kit              	    2	 2.5ms	1.3ms
+rendering chunks...
+.svelte-kit/output/server/vite-manifest.json                               2.05 kB
+.svelte-kit/output/server/internal.js                                      0.20 kB
+.svelte-kit/output/server/entries/fallbacks/layout.svelte.js               0.24 kB
+.svelte-kit/output/server/entries/pages/_student_/_page.svelte.js          0.37 kB
+.svelte-kit/output/server/entries/pages/_student_/_task_/_page.svelte.js   0.38 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                    0.77 kB
+.svelte-kit/output/server/entries/fallbacks/error.svelte.js                0.83 kB
+.svelte-kit/output/server/chunks/student.js                                1.30 kB
+.svelte-kit/output/server/chunks/index.js                                  3.68 kB
+.svelte-kit/output/server/chunks/server-internal.js                        4.19 kB
+.svelte-kit/output/server/index.js                                        79.02 kB
+(node:88491) ExperimentalWarning: Importing JSON modules is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Run npm run preview to preview your production build locally.
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                                                           0.03 kB
+.svelte-kit/output/client/vite-manifest.json                                                          5.52 kB
+.svelte-kit/output/client/_app/immutable/assets/_page-97bf0612.css                                    0.12 kB │ gzip:  0.13 kB
+.svelte-kit/output/client/_app/immutable/assets/students-3a62cca8.css                                 0.14 kB │ gzip:  0.12 kB
+.svelte-kit/output/client/_app/immutable/assets/_page-535231a0.css                                    0.17 kB │ gzip:  0.15 kB
+.svelte-kit/output/client/_app/immutable/assets/_page-5a208506.css                                    0.49 kB │ gzip:  0.26 kB
+.svelte-kit/output/client/_app/immutable/chunks/1-bb62fbb9.js                                         0.09 kB │ gzip:  0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/0-3a2eb335.js                                         0.09 kB │ gzip:  0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/2-8400a99d.js                                         0.10 kB │ gzip:  0.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/3-02efaddd.js                                         0.11 kB │ gzip:  0.11 kB
+.svelte-kit/output/client/_app/immutable/chunks/4-937b65ef.js                                         0.11 kB │ gzip:  0.11 kB
+.svelte-kit/output/client/_app/immutable/components/layout.svelte-d7f1a2c8.js                         0.54 kB │ gzip:  0.36 kB
+.svelte-kit/output/client/_app/immutable/chunks/preload-helper-41c905a7.js                            0.76 kB │ gzip:  0.48 kB
+.svelte-kit/output/client/_app/immutable/components/error.svelte-3930d443.js                          0.98 kB │ gzip:  0.57 kB
+.svelte-kit/output/client/_app/immutable/chunks/students-b9ff0103.js                                  1.22 kB │ gzip:  0.77 kB
+.svelte-kit/output/client/_app/immutable/components/pages/_page.svelte-2ab2cb70.js                    1.89 kB │ gzip:  0.96 kB
+.svelte-kit/output/client/_app/immutable/chunks/_page-d88497ef.js                                     2.08 kB │ gzip:  1.20 kB
+.svelte-kit/output/client/_app/immutable/components/pages/_student_/_page.svelte-9b54e4f6.js          2.14 kB │ gzip:  1.10 kB
+.svelte-kit/output/client/_app/immutable/chunks/_page-7feb8f71.js                                     2.18 kB │ gzip:  1.16 kB
+.svelte-kit/output/client/_app/immutable/chunks/singletons-1246537c.js                                2.53 kB │ gzip:  1.32 kB
+.svelte-kit/output/client/_app/immutable/components/pages/_student_/_task_/_page.svelte-494bc521.js   3.20 kB │ gzip:  1.37 kB
+.svelte-kit/output/client/_app/immutable/chunks/_page-e8f1a361.js                                     7.53 kB │ gzip:  2.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/index-857a2fad.js                                     7.98 kB │ gzip:  3.22 kB
+.svelte-kit/output/client/_app/immutable/start-05967d16.js                                           26.77 kB │ gzip: 10.30 kB
+
+> Using @sveltejs/adapter-vercel
+  ✔ done

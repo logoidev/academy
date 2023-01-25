@@ -1,0 +1,149 @@
+// Vitest Snapshot v1
+
+exports[`Tetris - logic > shapes can be rotated > I 1`] = `
+"1
+1
+1
+1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > I 2`] = `"1|1|1|1"`;
+
+exports[`Tetris - logic > shapes can be rotated > I 3`] = `
+"1
+1
+1
+1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > I 4`] = `"1|1|1|1"`;
+
+exports[`Tetris - logic > shapes can be rotated > J 1`] = `
+"1|1
+1|0
+1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > J 2`] = `
+"1|1|1
+0|0|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > J 3`] = `
+"0|1
+0|1
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > J 4`] = `
+"1|0|0
+1|1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > L 1`] = `
+"1|0
+1|0
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > L 2`] = `
+"1|1|1
+1|0|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > L 3`] = `
+"1|1
+0|1
+0|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > L 4`] = `
+"0|0|1
+1|1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > O 1`] = `
+"1|1
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > O 2`] = `
+"1|1
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > O 3`] = `
+"1|1
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > O 4`] = `
+"1|1
+1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > S 1`] = `
+"1|0
+1|1
+0|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > S 2`] = `
+"0|1|1
+1|1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > S 3`] = `
+"1|0
+1|1
+0|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > S 4`] = `
+"0|1|1
+1|1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > T 1`] = `
+"1|0
+1|1
+1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > T 2`] = `
+"1|1|1
+0|1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > T 3`] = `
+"0|1
+1|1
+0|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > T 4`] = `
+"0|1|0
+1|1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > Z 1`] = `
+"0|1
+1|1
+1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > Z 2`] = `
+"1|1|0
+0|1|1"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > Z 3`] = `
+"0|1
+1|1
+1|0"
+`;
+
+exports[`Tetris - logic > shapes can be rotated > Z 4`] = `
+"1|1|0
+0|1|1"
+`;
