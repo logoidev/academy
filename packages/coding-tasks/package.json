@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"install-prod": "yarn workspaces focus --production",
+		"install-prod": "yarn && yarn workspaces focus --production",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
