@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	const GITHUB_REPO_URL_BASE = 'https://github.com/logoidev/academy';
-	const GITHUB_REPO_URL = `${GITHUB_REPO_URL_BASE}/tree/main/packages/coding-tasks/src/students/`;
+	const GITHUB_REPO_URL = `${GITHUB_REPO_URL_BASE}/tree/main/src/users/`;
 	const GITHUB_LOGO_URL =
 		'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg';
 
@@ -10,7 +10,7 @@
 
 	onMount(() => {
 		const paths = window.location.pathname.split('/').filter(Boolean);
-		url += paths.join('/');
+		url = paths.length ? GITHUB_REPO_URL + paths.join('/') : GITHUB_REPO_URL_BASE;
 	});
 </script>
 
