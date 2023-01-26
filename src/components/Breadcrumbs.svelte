@@ -3,8 +3,13 @@
 
 	let parts: Array<string> = [];
 
+	const getPath = (parts: Array<string>, index: number) => {
+		const path = parts.slice(0, index + 1).join('/');
+		return `/${path}`;
+	};
+
 	onMount(() => {
-		parts = window.location.pathname.split('/').slice(0, -1);
+		parts = window.location.pathname.split('/');
 		parts[0] = '.';
 	});
 </script>
@@ -14,7 +19,7 @@
 		{#if i !== 0}
 			<span>/</span>
 		{/if}
-		<a href={`/${part}`}>{part}</a>
+		<a href={getPath(parts, i)}>{part}</a>
 	{/each}
 </div>
 
