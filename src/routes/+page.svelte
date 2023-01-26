@@ -27,8 +27,9 @@
 		<div class="text-xl">
 			<span>Academy</span>
 		</div>
-		<div class="text-sm mt-8">
-			<span>Software Engineeering Aprenticeship</span>
+		<div class="text-sm mt-8 flex flex-col items-center">
+			<span>Digital Design & Software Engineeering</span>
+			<span>Aprenticeship</span>
 		</div>
 		<div class="call-to-action text-sm">
 			<a href={MAILTO_URL} target="__blank">Get in touch</a>
@@ -36,10 +37,7 @@
 	</div>
 	<div class="flex flex-col items-center">
 		<div class="text-sm underline">
-			<a href="/teachers">🧑‍🎓 Teachers</a>
-		</div>
-		<div class="text-sm underline">
-			<a href="/students">👨‍💻 Students</a>
+			<a href="/members">Members</a>
 		</div>
 
 		<div class="mt-16 w-24">

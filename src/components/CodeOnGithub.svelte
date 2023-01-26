@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	const GITHUB_REPO_URL_BASE = 'https://github.com/logoidev/academy';
-	const GITHUB_REPO_URL = `${GITHUB_REPO_URL_BASE}/tree/main/src/users/`;
+	const GITHUB_REPO_URL = `${GITHUB_REPO_URL_BASE}/tree/main/src/`;
 	const GITHUB_LOGO_URL =
 		'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg';
 

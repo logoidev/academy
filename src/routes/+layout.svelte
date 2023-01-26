@@ -3,7 +3,7 @@
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 
-	// import '../shared/fonts/index';
+	import '@logoi/blog/src/shared/fonts/index';
 	import '../app.css';
 	import Spinner from '@logoi/blog/src/components/Spinner.svelte';
 

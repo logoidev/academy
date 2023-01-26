@@ -1,14 +1,15 @@
 <script lang="ts">
+	import Breadcrumbs from '../../components/Breadcrumbs.svelte';
 	import CodeOnGithub from '../../components/CodeOnGithub.svelte';
-	import { STUDENTS } from '../../users/students/students';
+	import { MEMBERS } from '../../members/members';
 </script>
 
+<Breadcrumbs />
 <div class="flex justify-center items-center flex-col h-screen">
-	<p>Students:</p>
 	<ul>
-		{#each STUDENTS as student}
+		{#each MEMBERS as member}
 			<li class="underline">
-				<a href={`/students/${student.name.toLowerCase()}`}>👨‍💻 {student.name}</a>
+				<a href={`/members/${member.name.toLowerCase()}`}>👨‍💻 {member.name}</a>
 			</li>
 		{/each}
 	</ul>
