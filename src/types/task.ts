@@ -1,5 +1,6 @@
 export enum Task {
-	SNAKE = 'Snake',
-	TICTACTOE = 'Tictactoe',
-	TETRIS = 'Tetris'
+	SNAKE = 'snake',
+	TICTACTOE = 'tictactoe',
+	TETRIS = 'tetris',
+	CONNECT_FOUR = 'connect-four'
 }

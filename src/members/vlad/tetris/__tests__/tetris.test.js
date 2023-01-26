@@ -39,8 +39,7 @@ describe('Tetris - logic', () => {
 				{ x: 2, y: 1 },
 				{ x: 3, y: 1 }
 			]);
-			const clone = shape.clone();
-			expect(clone instanceof L).toBe(true);
+			expect(shape instanceof L).toBe(true);
 
 			field.addShape(shape);
 

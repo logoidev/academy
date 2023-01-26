@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const readline = require('readline').createInterface({
 	input: process.stdin,
 	output: process.stdout
@@ -11,6 +12,7 @@ const askQuestion = (question) =>
 	);
 
 const askRepeatedQuestion = async (question, getValues, isValid) => {
+	// eslint-disable-next-line
 	while (true) {
 		try {
 			const answer = await askQuestion(question);
