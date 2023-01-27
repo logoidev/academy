@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { Field, checkSequence } from '../Field';
 
 describe('Connect four test', () => {
-	const field = new Field(6, 7, 2, 3);
+	const field = new Field({ columns: 6, rows: 7, playerCount: 2, winLength: 3 });
 
 	beforeEach(() => field.clear());
 

@@ -4,8 +4,8 @@ export class Cell {
 	placed: boolean;
 	player?: number;
 
-	static COLORS = ['transparent', '#ef3330', '#f7de06'];
-	static CLI_COLORS = ['⚪', '🔴', '🟡'];
+	static COLORS = ['transparent', '#ef3330', '#f7de06', '#f18000', '#00aa10', '#0061d1', '#be1afe'];
+	static CLI_COLORS = ['⚪', '🔴', '🟡', '🟠', '🟢', '🔵', '🟣'];
 
 	constructor(player?: number, column?: number, row?: number, placed = false) {
 		this.player = player;
@@ -29,6 +29,14 @@ export class Cell {
 	toString = () => this.cli;
 }
 
+export interface FieldParams {
+	columns: number;
+	rows: number;
+	playerCount?: number;
+	winLength?: number;
+	startingPlayer?: number;
+}
+
 export class Field {
 	private columns: number;
 	private rows: number;
@@ -38,12 +46,12 @@ export class Field {
 	currentPlayer: number;
 	moves: Array<number> = [];
 
-	constructor(columns: number, rows: number, playerCount = 2, winLength = 4) {
-		this.columns = columns;
-		this.rows = rows;
-		this.playerCount = playerCount;
-		this.currentPlayer = 0;
-		this.winLength = winLength;
+	constructor(params: FieldParams) {
+		this.columns = params.columns;
+		this.rows = params.rows;
+		this.playerCount = params.playerCount ?? 2;
+		this.currentPlayer = params.startingPlayer ?? 0;
+		this.winLength = params.winLength ?? 4;
 		this.field = this.makeField();
 	}
 
@@ -56,6 +64,8 @@ export class Field {
 	getPlayerColor(player = this.currentPlayer) {
 		return new Cell(player).color;
 	}
+
+	static MAX_PLAYERS = Cell.COLORS.length - 1;
 
 	get cells() {
 		return [...this.field];

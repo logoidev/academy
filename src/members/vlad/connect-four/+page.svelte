@@ -1,13 +1,15 @@
 <script lang="ts">
-	import { Field } from './Field';
+	import { Field, type FieldParams } from './Field';
 
-	// TODO: Make dynamic
-	const columns = 7;
-	const rows = 6;
-	const playerCount = 2;
-	const winLength = 4;
+	let params: FieldParams = {
+		columns: 7,
+		rows: 6,
+		playerCount: 2,
+		winLength: 4
+	};
+	let showParams = true;
 
-	const field = new Field(columns, rows, playerCount, winLength);
+	let field = new Field(params);
 	let fieldCells = field.cells;
 	let player = field.currentPlayer;
 	let showWinner = false;
@@ -17,7 +19,6 @@
 		fieldCells = field.cells;
 		player = field.currentPlayer;
 	};
-
 	refresh();
 
 	const checkWinner = () => {
@@ -33,6 +34,12 @@
 		refresh();
 		checkWinner();
 	};
+
+	const changeParams = (newParams: Partial<FieldParams>) => {
+		params = Object.assign({}, params, newParams);
+		field = new Field(params);
+		refresh();
+	};
 </script>
 
 <div class="flex flex-col justify-center items-center h-screen">
@@ -42,7 +49,7 @@
 		Player {player + 1}
 	</div>
 
-	<div class="wrapper flex justify-center items-center">
+	<div class="wrapper flex justify-center items-center relative">
 		{#each fieldCells as column, c}
 			<button class="column" on:click={() => onColumnClick(c)}>
 				{#each column as cell}
@@ -56,6 +63,60 @@
 			</button>
 		{/each}
 	</div>
+
+	<button class="mt-4" on:click={() => (showParams = !showParams)}>🔧</button>
+	{#if showParams}
+		<div>
+			<p>
+				<label for="columns">Columns:</label>
+				<input
+					name="columns"
+					type="number"
+					min="2"
+					max="12"
+					class="w-8"
+					value={params.columns}
+					on:change={(e) => changeParams({ columns: e.currentTarget.valueAsNumber })}
+				/>
+			</p>
+			<p>
+				<label for="rows">Rows:</label>
+				<input
+					name="rows"
+					type="number"
+					min="2"
+					max="10"
+					class="w-8"
+					value={params.rows}
+					on:change={(e) => changeParams({ rows: e.currentTarget.valueAsNumber })}
+				/>
+			</p>
+			<p>
+				<label for="players">Players:</label>
+				<input
+					name="players"
+					type="number"
+					min="1"
+					max={Field.MAX_PLAYERS}
+					class="w-8"
+					value={params.playerCount}
+					on:change={(e) => changeParams({ playerCount: e.currentTarget.valueAsNumber })}
+				/>
+			</p>
+			<p>
+				<label for="winLength">Winning length:</label>
+				<input
+					name="winLength"
+					type="number"
+					min="2"
+					max="8"
+					class="w-8"
+					value={params.winLength}
+					on:change={(e) => changeParams({ winLength: e.currentTarget.valueAsNumber })}
+				/>
+			</p>
+		</div>
+	{/if}
 
 	{#if showWinner}
 		<div
