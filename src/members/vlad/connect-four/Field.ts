@@ -189,6 +189,15 @@ export class Field {
 			undefined
 		);
 
+		if (!isWin?.win && this.moves.length === this.columns * this.rows) {
+			const draw: Winner = {
+				win: true,
+				winner: undefined,
+				streak: 0
+			};
+			return draw;
+		}
+
 		return isWin;
 	};
 }
