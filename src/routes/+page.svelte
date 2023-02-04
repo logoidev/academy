@@ -12,9 +12,6 @@
 
 	let isMottoShown = false;
 
-	let apprenticeshipIndex = 0;
-
-	let ms = 3333;
 	let index = 0;
 	const next = () => {
 		index += 1;
@@ -23,19 +20,11 @@
 		}
 	};
 
-	let clear: Timer;
-	$: {
-		clearInterval(clear);
-		clear = setInterval(next, ms);
-	}
-
 	onMount(() => {
 		if (window.location.search) {
 			window.location.href = window.location.pathname;
 		}
 	});
-
-	$: MAILTO = MAILTO_URL + `, ${APPRENTICESHIPS[apprenticeshipIndex]} Apprenticeship`;
 
 	const LANGUAGES = ['English', 'Greek', 'Ukrainian', 'Russian', 'Georgian', 'Hebrew'];
 	const ACADEMY = ['Academy', 'Ακαδημία', 'Академія', 'Aкадемия', 'აკადემია', 'אֲקָדֶמִיָה'];
@@ -48,13 +37,10 @@
 		'אף אחד שלא יודע בגיאומטריה רשאי להיכנס'
 	];
 
-	const SUMMARY = ['Dialectic approach to Software Engineering', 'Practical group learning'];
-
-	const APPRENTICESHIPS = [
-		'Software Engineeering',
-		'Digital Design',
-		'Web Development',
-		'Game Development'
+	const SUMMARY = [
+		'Dialectic approach to Software Engineering',
+		'Practical project-based group learning',
+		'Apprenticeships'
 	];
 </script>
 
@@ -72,49 +58,28 @@
 			</button>
 
 			{#if isMottoShown}
-				<div class="text-xl">
+				<button class="text-xl" on:click={next}>
 					<span class="text-sm trajan">"{MOTTO[index]}"</span>
-				</div>
+				</button>
 			{/if}
 		</div>
 
-		{#each SUMMARY as line}
-			<div class="text-lg">{line}</div>
-		{/each}
-
-		<div class="text-sm mt-8 flex flex-col items-center">
-			<div class="w-48 flex text-center">
-				<button
-					class="text-xl p-4"
-					disabled={apprenticeshipIndex === 0}
-					on:click={() => {
-						if (apprenticeshipIndex > 0) {
-							apprenticeshipIndex--;
-						}
-					}}>{'<'}</button
-				>
-				<span class="text-lg">{APPRENTICESHIPS[apprenticeshipIndex] ?? ''} Aprenticeship</span>
-				<button
-					class="text-xl p-4"
-					disabled={apprenticeshipIndex === APPRENTICESHIPS.length - 1}
-					on:click={() => {
-						if (apprenticeshipIndex < APPRENTICESHIPS.length - 1) {
-							apprenticeshipIndex++;
-						}
-					}}>{'>'}</button
-				>
-			</div>
+		<div class="text-center my-2">
+			{#each SUMMARY as line}
+				<div class="text-lg">{line}</div>
+			{/each}
 		</div>
 
 		<div class="call-to-action text-lg">
-			<a href={MAILTO} target="__blank">Get in touch</a>
+			<a href={MAILTO_URL} target="__blank">Get in touch</a>
 		</div>
 	</div>
-	<div class="flex flex-col items-center">
-		<div class="text-base underline">
-			<a href="/members">Members</a>
-		</div>
 
+	<div class="text-base underline">
+		<a href="/members">Members</a>
+	</div>
+
+	<div class="flex flex-col items-center">
 		<div class="mt-16 w-24">
 			<a href={getFullMainUrl('academy')} target="__blank">
 				<Image class="mt-4" src={QrSvgSrc} />

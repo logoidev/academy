@@ -32,4 +32,10 @@
 		width: 24px;
 		margin: 8px;
 	}
+
+	@media only screen and (max-width: 450px) {
+		a {
+			display: none;
+		}
+	}
 </style>
