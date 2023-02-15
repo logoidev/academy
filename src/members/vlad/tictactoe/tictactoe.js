@@ -1,4 +1,8 @@
-const readline = require('readline').createInterface({
+// To run execute → yarn workspace @logoi/academy node ./src/members/vlad/tictactoe/tictactoe.js
+
+import rl from 'readline';
+
+const readline = rl.createInterface({
 	input: process.stdin,
 	output: process.stdout
 });
@@ -11,6 +15,7 @@ const askQuestion = (question) =>
 	);
 
 const askRepeatedQuestion = async (question, getValues, isValid) => {
+	// eslint-disable-next-line no-constant-condition
 	while (true) {
 		try {
 			const answer = await askQuestion(question);

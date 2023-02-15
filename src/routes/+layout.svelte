@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
 
 	import '@logoi/blog/src/shared/fonts/index';
 	import '../app.css';
@@ -14,10 +13,6 @@
 	let loaded = false;
 
 	onMount(() => {
-		if (!dev) {
-			inject();
-		}
-
 		if (SHOULD_REDIRECT_ON_LOCAL_DEV && dev) {
 			if (['localhost', '127.0.0.1'].includes(location.hostname)) {
 				location.hostname = LOCAL_ORIGIN;

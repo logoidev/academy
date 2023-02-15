@@ -1,81 +1,45 @@
 Checking formatting...
 All matched files use Prettier code style!
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/currying.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/currying.js
   1:7  warning  'sum' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/draft.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/draft.js
    1:10  warning  'toBinary2' is defined but never used   @typescript-eslint/no-unused-vars
   13:10  warning  'toBinary' is defined but never used    @typescript-eslint/no-unused-vars
-  37:14  error    'result' is not defined                 no-undef
   43:10  warning  'printChars' is defined but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/draft1.js
-   1:18  error    Require statement not part of import statement  @typescript-eslint/no-var-requires
-   9:29  warning  'question' is defined but never used            @typescript-eslint/no-unused-vars
-  13:2   error    'number' is not defined                         no-undef
-  14:12  error    'number' is not defined                         no-undef
-  18:13  error    'number' is not defined                         no-undef
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/draft4.js
+  12:29  warning  'question' is defined but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/draft4.js
-   1:18  error    Require statement not part of import statement  @typescript-eslint/no-var-requires
-   9:29  warning  'question' is defined but never used            @typescript-eslint/no-unused-vars
-  13:2   error    'number' is not defined                         no-undef
-  14:12  error    'number' is not defined                         no-undef
-  18:13  error    'number' is not defined                         no-undef
-
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/draft5.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/draft5.js
   2:7  warning  'buildSpaceString' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/inputArraySummary.js
-  11:18  error    Require statement not part of import statement  @typescript-eslint/no-var-requires
-  17:24  warning  'reject' is defined but never used              @typescript-eslint/no-unused-vars
-  19:29  warning  'question' is defined but never used            @typescript-eslint/no-unused-vars
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/inputArraySummary.js
+  18:24  warning  'reject' is defined but never used    @typescript-eslint/no-unused-vars
+  20:29  warning  'question' is defined but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/pascalsTriangle.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/pascalsTriangle.js
    9:7  warning  'pause' is assigned a value but never used      @typescript-eslint/no-unused-vars
   36:9  warning  'spaces' is assigned a value but never used     @typescript-eslint/no-unused-vars
   37:9  warning  'result' is assigned a value but never used     @typescript-eslint/no-unused-vars
   43:7  warning  'benchmark' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/pow.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/pow.js
    2:10  warning  'pow2' is defined but never used  @typescript-eslint/no-unused-vars
   17:10  warning  'pow' is defined but never used   @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/printEven.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/andrew/leetcode/exercise/printEven.js
   2:7  warning  'top' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/leetcode/exercise/readLinePromises.js
-   1:18  error    Require statement not part of import statement  @typescript-eslint/no-var-requires
-  19:24  warning  'reject' is defined but never used              @typescript-eslint/no-unused-vars
-  22:29  warning  'question' is defined but never used            @typescript-eslint/no-unused-vars
-  27:21  error    'firstName' is not defined                      no-undef
-  27:34  error    'lastName' is not defined                       no-undef
-
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/andrew/tictactoe/__tests__/getWinner.test.js
-  2:22  warning  'checkWinGame' is defined but never used  @typescript-eslint/no-unused-vars
-
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/snake/__tests__/__mocks__/canvas.js
-  2:10  warning  'toMatchImageSnapshot' is defined but never used  @typescript-eslint/no-unused-vars
-
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/snake/__tests__/snake.test.js
-  2:24  warning  'vi' is defined but never used  @typescript-eslint/no-unused-vars
-
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/snake/script.js
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/members/vlad/snake/script.js
   134:54  warning  'oldDirection' is defined but never used  @typescript-eslint/no-unused-vars
-  164:9   error    Unexpected constant condition             no-constant-condition
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/tetris/__tests__/tetris.test.js
-   2:24  warning  'vi' is defined but never used              @typescript-eslint/no-unused-vars
-   2:36  warning  'beforeAll' is defined but never used       @typescript-eslint/no-unused-vars
-  42:10  warning  'clone' is assigned a value but never used  @typescript-eslint/no-unused-vars
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/routes/+page.svelte
+  29:8  warning  'LANGUAGES' is assigned a value but never used  @typescript-eslint/no-unused-vars
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/tetris/script.js
-  34:9  error  Unexpected constant condition  no-constant-condition
+/Users/v1adko/Projects/Logoi/logoi/packages/academy/src/routes/members/[member]/[task]/+page.svelte
+  12:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
 
-/Users/v1adko/Projects/Logoi/academy/packages/coding-tasks/src/routes/vlad/tictactoe/tictactoe.js
-   1:18  error  Require statement not part of import statement  @typescript-eslint/no-var-requires
-  14:9   error  Unexpected constant condition                   no-constant-condition
-
-✖ 42 problems (17 errors, 25 warnings)
+✖ 18 problems (0 errors, 18 warnings)
 
